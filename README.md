@@ -4,7 +4,12 @@
 ## Description
 // TODO(user): An in-depth paragraph about your project and overview of use
 
-## Getting Started
+## Generate operator
+```sh
+~/operator-sdk_linux_amd64 init --domain borislitv.net --repo github.com/borislitv/node-operator
+~/operator-sdk_linux_amd64 create api --version=v1 --kind=Node --controller --resource=false
+```
+patch reconcile loop in "internal/controller/node_controller.go"
 
 ### Prerequisites
 - go version v1.20.0+
